@@ -34,7 +34,7 @@ The target user is an enterprise developer, business-process team, or system int
 - **Target hardware:** 4 vCPU, 8 GB RAM, integrated GPU only (standard ADTC evaluation profile). G1-360M F16 loads in approximately 4 GB RAM, leaving headroom for the OS and application layer.
 - **Connectivity:** Zero external network calls during inference. Model runs entirely from local weights. Designed explicitly for offline enterprise environments.
 - **Data:** Training data is proprietary (GSS Connect Product 002). The model is not derived from any publicly released base model weights.
-- **License:** G1-360M is distributed under the G1-360M Commercial License. The license permits corporate and enterprise use, fine-tuning, and customization. Full license: https://g1-license.pages.dev
+- **License:** G1-360M is distributed under the G1-360M Commercial License. The license permits corporate and enterprise use, fine-tuning, and customization. Full license: https://www.g1-license.gss-tec.com/
 
 ---
 

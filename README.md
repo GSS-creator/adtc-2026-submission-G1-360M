@@ -125,7 +125,7 @@ Registration No. **80041130611335** — Kampala, Uganda
 
 G1-360M V18.2 is distributed under the **G1-360M Commercial License**.
 
-Full license: **https://g1-license.pages.dev**
+Full license: **https://www.g1-license.gss-tec.com/**
 
 The license permits corporate and enterprise use, fine-tuning, customization, and embedding into commercial products and services.
 
