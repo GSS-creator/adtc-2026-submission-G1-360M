@@ -1,0 +1,37 @@
+{
+  "team_id": "gss-llp-g1",
+  "domain": "corporate_enterprise",
+  "language_scope": ["en"],
+  "african_alpha_claim": true,
+  "budget_laptop_claim": true,
+  "submitter": {
+    "name": "Gaston Muhangi",
+    "email": "info@gss-tec.com",
+    "github_handle": "gsstec"
+  },
+  "cross_disciplinary_pairing": {
+    "discipline": "corporate_enterprise",
+    "load_bearing": true,
+    "description": "G1-360M is a purpose-built enterprise AI model for African businesses and organizations. It reasons over business workflows, enterprise architecture, APIs, data validation, security controls, and operational processes — running fully offline on a laptop with no cloud dependency, making it practical for enterprises in bandwidth-constrained or privacy-sensitive African environments."
+  },
+  "test_prompts": [
+    {
+      "prompt_id": "tp_001",
+      "prompt": "A payment workflow receives a transaction ID from an external system. List the validation steps that must be completed before the transaction ID is used to authorize a payment."
+    },
+    {
+      "prompt_id": "tp_002",
+      "prompt": "An enterprise API integration with a third-party supplier goes offline during business hours. Describe the offline resilience steps the system should take to maintain business continuity."
+    }
+  ],
+  "model": {
+    "name": "G1-360M_V18.2_PRODUCTION_F16",
+    "runtime": "llama.cpp",
+    "quantization": "GGUF F16",
+    "parameters_estimate": "360M",
+    "packaging": "binary_bundle"
+  },
+  "_runtime": {
+    "model_path": "model/G1-360M_V18.2_PRODUCTION_F16.gguf"
+  }
+}
