@@ -40,11 +40,18 @@
     "os": "Kali GNU/Linux Rolling (WSL2 on Windows 10)"
   },
   "throughput": {
-    "tokens_per_second_generation": 15.534,
-    "tokens_per_second_prompt": 85.098,
+    "tokens_per_second_generation": 4.802,
+    "tokens_per_second_prompt": 44.130,
     "first_token_latency_ms": null,
     "prompt_tokens": 512,
-    "generated_tokens": 128
+    "generated_tokens": 128,
+    "stddev_ts_prompt": 1.740,
+    "stddev_ts_generation": 0.684,
+    "samples_ts_prompt": [44.1394, 41.3409, 45.4773, 43.9841, 45.7075],
+    "samples_ts_generation": [4.26192, 3.90757, 5.45486, 5.03872, 5.34532],
+    "bench_run_utc": "2026-08-23T08:57:34Z",
+    "build_commit": "58d07a80",
+    "build_number": 4770
   },
   "memory": {
     "peak_rss_mb": 782.39,
@@ -60,7 +67,9 @@
   "reproducibility": {
     "git_commit_sha": "6eb1f22cd2cd",
     "docker_image_digest": "unknown",
-    "random_seed": 42
+    "random_seed": 42,
+    "llama_cpp_build": "b4770",
+    "llama_cpp_commit": "58d07a80"
   },
   "model_info": {
     "params_count": 361821120,

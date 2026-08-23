@@ -46,12 +46,15 @@ The target user is an enterprise developer, business-process team, or system int
 | llama.cpp build | b4770 (58d07a80) |
 | Model size on disk | ~690 MB (GGUF F16) |
 | RAM at peak load | ~782 MB RSS (standard); ~4 GB via Ollama desktop |
-| Prompt processing | **85.10 tokens/s** (pp=512, CPU only, 5-sample avg) |
-| Token generation | **15.53 tokens/s** (tg=128, CPU only, 5-sample avg) |
+| Prompt processing | **44.13 tokens/s** (pp=512, 5-sample avg) |
+| Prompt processing stddev | ±1.74 tokens/s |
+| Token generation | **4.80 tokens/s** (tg=128, 5-sample avg) |
+| Token generation stddev | ±0.68 tokens/s |
+| Bench run timestamp | 2026-08-23T08:57:34Z |
 | Thermal throttling | None observed during standard inference runs |
 | Offline capable | Yes — zero network calls during inference |
 
-Measured with the official `llama-bench` binary (b4770) on the participant laptop via WSL2. Official scores are measured by the ADTC profiler on the standard evaluation machine.
+Measured with the official `llama-bench` binary (b4770, commit `58d07a80`) on the participant laptop via WSL2 (RPC backend). Official scores are measured by the ADTC profiler on the standard evaluation machine.
 
 ---
 

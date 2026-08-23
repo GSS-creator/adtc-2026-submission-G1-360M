@@ -92,6 +92,22 @@ llama-server \
 
 ---
 
+## Benchmark Results
+
+Measured with `llama-bench` (b4770, commit `58d07a80`) on the participant laptop via WSL2.
+
+| Metric | Value |
+|---|---|
+| Machine | Intel Core i5-8350U @ 1.70GHz / 7.9 GB RAM |
+| OS | Kali GNU/Linux Rolling (WSL2 on Windows 10) |
+| Prompt processing (pp=512) | **44.13 tokens/s** *(±1.74, 5-sample avg)* |
+| Token generation (tg=128) | **4.80 tokens/s** *(±0.68, 5-sample avg)* |
+| Peak RAM (RSS) | ~782 MB |
+| Thermal throttling | None |
+| Bench run | 2026-08-23T08:57:34Z |
+
+---
+
 ## Enterprise Capabilities
 
 G1 is designed to assist with practical enterprise reasoning:
