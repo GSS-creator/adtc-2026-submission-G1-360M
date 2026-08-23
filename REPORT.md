@@ -42,15 +42,16 @@ The target user is an enterprise developer, business-process team, or system int
 
 | Metric | Value |
 |---|---|
-| Machine | Intel Core i5 / 8 GB RAM / Ubuntu 22.04 |
-| Model size on disk | ~692 MB (GGUF F16) |
-| RAM at peak load | ~8 GB (standard); ~4 GB via Ollama desktop |
-| Time to first token | ~380 ms |
-| Generation speed | ~14–18 tokens/s (CPU only) |
+| Machine | Intel Core i5-8350U @ 1.70GHz / 7.9 GB RAM / Kali Linux (WSL2) |
+| llama.cpp build | b4770 (58d07a80) |
+| Model size on disk | ~690 MB (GGUF F16) |
+| RAM at peak load | ~782 MB RSS (standard); ~4 GB via Ollama desktop |
+| Prompt processing | **85.10 tokens/s** (pp=512, CPU only, 5-sample avg) |
+| Token generation | **15.53 tokens/s** (tg=128, CPU only, 5-sample avg) |
 | Thermal throttling | None observed during standard inference runs |
 | Offline capable | Yes — zero network calls during inference |
 
-These are self-reported development benchmarks. Official scores are measured by the ADTC profiler on the standard evaluation machine.
+Measured with the official `llama-bench` binary (b4770) on the participant laptop via WSL2. Official scores are measured by the ADTC profiler on the standard evaluation machine.
 
 ---
 

@@ -56,7 +56,7 @@ G1's inference architecture — from user prompt to enterprise response:
 ## Quick Start
 
 ```bash
-# 1. Download the model weights (~692 MB)
+# 1. Download the model weights (~690 MB)
 bash download_model.sh
 
 # 2. Run with llama.cpp
@@ -84,7 +84,7 @@ llama-server \
 | Developer | Gaston Software Solutions LLP (GSS-LLP) |
 | Parameters | ~360M |
 | Format | GGUF F16 |
-| RAM required | 8 GB (4 GB with Ollama desktop) |
+| RAM required | ~782 MB RSS measured; 8 GB headroom recommended (4 GB with Ollama desktop) |
 | Runtime | llama.cpp |
 | Domain | Corporate enterprise |
 | License | G1-360M Commercial License |
