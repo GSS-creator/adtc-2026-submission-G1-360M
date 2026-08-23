@@ -4,6 +4,7 @@
 **Track:** Corporate Enterprise
 **Model:** G1-360M_V18.2_PRODUCTION_F16
 **Hugging Face:** https://huggingface.co/gsstec/G1-360M_V18.2_PRODUCTION_F16
+**Ollama Registry:** https://ollama.com/gastonsoftwaresolutions234/g1-360m
 
 ---
 
@@ -54,6 +55,14 @@ G1's inference architecture — from user prompt to enterprise response:
 ---
 
 ## Quick Start
+
+### Option A — Ollama (easiest, recommended for team members)
+
+```bash
+ollama run gastonsoftwaresolutions234/g1-360m
+```
+
+### Option B — llama.cpp
 
 ```bash
 # 1. Download the model weights (~690 MB)
