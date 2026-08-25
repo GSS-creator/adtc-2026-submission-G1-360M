@@ -17,16 +17,16 @@
     "cross_disciplinary_pairing": {
       "discipline": "corporate_enterprise",
       "load_bearing": true,
-      "description": "G1-360M is a purpose-built enterprise AI model for African businesses and organizations. It reasons over business workflows, enterprise architecture, APIs, data validation, securit[...]"
+      "description": "G1-360M is a purpose-built enterprise AI model for African businesses and organizations. It reasons over business workflows, enterprise architecture, APIs, data validation, s[...]
     },
     "test_prompts": [
       {
         "prompt_id": "tp_001",
-        "prompt": "Design a practical enterprise workflow for a multi-branch customer-order platform that must operate during unreliable connectivity, securely accept API orders, prevent duplicate trans[...]"
+        "prompt": "Design a practical enterprise workflow for a multi-branch customer-order platform that must operate during unreliable connectivity, securely accept API orders, prevent duplicate[...]
       },
       {
         "prompt_id": "tp_002",
-        "prompt": "Design a practical security architecture for a financial-services employee platform that manages employee, salary, performance, and organizational data, supports different access leve[...]"
+        "prompt": "Design a practical security architecture for a financial-services employee platform that manages employee, salary, performance, and organizational data, supports different acces[...]
       }
     ],
     "model": {
