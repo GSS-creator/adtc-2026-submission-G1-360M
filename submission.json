@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.1.0",
+  "profiler_version": "adtc-profiler 0.1.0",
+  "submission": {
+    "team_id": "gss-llp-g1",
+    "domain": "corporate_enterprise",
+    "language_scope": [
+      "en"
+    ],
+    "african_alpha_claim": true,
+    "budget_laptop_claim": true,
+    "submitter": {
+      "name": "Gaston Software Solutions LLP",
+      "email": "info@gss-tec.com / gastonsoftwaresolutions234@gmail.com",
+      "github_handle": "gsstec"
+    },
+    "cross_disciplinary_pairing": {
+      "discipline": "corporate_enterprise",
+      "load_bearing": true,
+      "description": "G1-360M is a purpose-built enterprise AI model for African businesses and organizations. It reasons over business workflows, enterprise architecture, APIs, data validation, security controls, and operational processes - running fully offline on a laptop with no cloud dependency, making it practical for enterprises in bandwidth-constrained or privacy-sensitive African environments."
+    },
+    "test_prompts": [
+      {
+        "prompt_id": "tp_001",
+        "prompt": "Our company operates a customer-order platform across multiple branches. Each branch has unreliable internet connectivity, employees submit orders through an API, and customer data must be protected. During an internet outage, branches must continue accepting orders without creating duplicate transactions. When connectivity returns, the orders must synchronize safely with the central system.\n\nAs an enterprise architect, design the practical workflow for this system. Explain:\n\n1. How orders should be captured during an outage.\n2. How the system should generate and maintain unique transaction identifiers.\n3. What validation should occur before an order is accepted.\n4. How authentication and authorization should be handled.\n5. How synchronization should occur when connectivity returns.\n6. How duplicate orders and conflicting records should be detected.\n7. What should happen when synchronization fails.\n8. Which component should be treated as the final authority for transaction state.\n\nKeep the solution practical for an enterprise environment and clearly distinguish required controls from assumptions."
+      },
+      {
+        "prompt_id": "tp_002",
+        "prompt": "A financial-services company is building an internal employee management platform. The system contains employee records, salary information, performance data, and organizational information. Multiple departments need different levels of access, and some services communicate through internal APIs.\n\nDesign a practical security architecture for the platform. Explain:\n\n1. How users should be authenticated.\n2. How authorization should determine what each employee can access.\n3. How API requests should be validated.\n4. How sensitive employee data should be protected.\n5. How access and administrative actions should be logged.\n6. How the system should handle an employee whose role changes.\n7. What should happen when an unauthorized request is detected.\n8. Which security controls are essential and which would be unnecessary complexity for this system.\n\nDo not assume specific technologies unless required. State assumptions where information is missing."
+      }
+    ],
+    "model": {
+      "name": "G1-360M_V18.2_PRODUCTION_F16",
+      "runtime": "llama.cpp",
+      "quantization": "GGUF F16",
+      "parameters_estimate": "360M",
+      "packaging": "binary_bundle"
+    }
+  },
+  "environment": {
+    "measured_on": "participant_laptop",
+    "cpu_model": "Intel(R) Core(TM) i5-8350U CPU @ 1.70GHz",
+    "ram_gb": 7.9,
+    "gpu": "none",
+    "os": "Kali GNU/Linux Rolling (WSL2 on Windows 10)"
+  },
+  "throughput": {
+    "tokens_per_second_generation": 15.534,
+    "tokens_per_second_prompt": 85.098,
+    "first_token_latency_ms": null,
+    "prompt_tokens": 512,
+    "generated_tokens": 128
+  },
+  "memory": {
+    "peak_rss_mb": 782.39,
+    "steady_state_rss_mb": 782.39,
+    "peak_vms_mb": 545.23
+  },
+  "accuracy": [],
+  "cpu_thermal": {
+    "cpu_percent_p99": 100.0,
+    "core_temp_c_peak": null,
+    "throttled": false
+  },
+  "reproducibility": {
+    "git_commit_sha": "6eb1f22cd2cd",
+    "docker_image_digest": "unknown",
+    "random_seed": 42
+  },
+  "model_info": {
+    "params_count": 361821120,
+    "context_length": 8192,
+    "architecture": "llama",
+    "claimed_params_estimate": "360M",
+    "params_match": true
+  }
+}
