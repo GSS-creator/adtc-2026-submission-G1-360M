@@ -12,21 +12,21 @@
     "submitter": {
       "name": "Gaston Software Solutions LLP",
       "email": "info@gss-tec.com / gastonsoftwaresolutions234@gmail.com",
-      "github_handle": "gsstec"
+      "github_handle": "GSS-creator"
     },
     "cross_disciplinary_pairing": {
       "discipline": "corporate_enterprise",
       "load_bearing": true,
-      "description": "G1-360M is a purpose-built enterprise AI model for African businesses and organizations. It reasons over business workflows, enterprise architecture, APIs, data validation, security controls, and operational processes - running fully offline on a laptop with no cloud dependency, making it practical for enterprises in bandwidth-constrained or privacy-sensitive African environments."
+      "description": "G1-360M is a purpose-built enterprise AI model for African businesses and organizations. It reasons over business workflows, enterprise architecture, APIs, data validation, securit[...]"
     },
     "test_prompts": [
       {
         "prompt_id": "tp_001",
-        "prompt": "Our company operates a customer-order platform across multiple branches. Each branch has unreliable internet connectivity, employees submit orders through an API, and customer data must be protected. During an internet outage, branches must continue accepting orders without creating duplicate transactions. When connectivity returns, the orders must synchronize safely with the central system.\n\nAs an enterprise architect, design the practical workflow for this system. Explain:\n\n1. How orders should be captured during an outage.\n2. How the system should generate and maintain unique transaction identifiers.\n3. What validation should occur before an order is accepted.\n4. How authentication and authorization should be handled.\n5. How synchronization should occur when connectivity returns.\n6. How duplicate orders and conflicting records should be detected.\n7. What should happen when synchronization fails.\n8. Which component should be treated as the final authority for transaction state.\n\nKeep the solution practical for an enterprise environment and clearly distinguish required controls from assumptions."
+        "prompt": "Design a practical enterprise workflow for a multi-branch customer-order platform that must operate during unreliable connectivity, securely accept API orders, prevent duplicate trans[...]"
       },
       {
         "prompt_id": "tp_002",
-        "prompt": "A financial-services company is building an internal employee management platform. The system contains employee records, salary information, performance data, and organizational information. Multiple departments need different levels of access, and some services communicate through internal APIs.\n\nDesign a practical security architecture for the platform. Explain:\n\n1. How users should be authenticated.\n2. How authorization should determine what each employee can access.\n3. How API requests should be validated.\n4. How sensitive employee data should be protected.\n5. How access and administrative actions should be logged.\n6. How the system should handle an employee whose role changes.\n7. What should happen when an unauthorized request is detected.\n8. Which security controls are essential and which would be unnecessary complexity for this system.\n\nDo not assume specific technologies unless required. State assumptions where information is missing."
+        "prompt": "Design a practical security architecture for a financial-services employee platform that manages employee, salary, performance, and organizational data, supports different access leve[...]"
       }
     ],
     "model": {
@@ -45,11 +45,18 @@
     "os": "Kali GNU/Linux Rolling (WSL2 on Windows 10)"
   },
   "throughput": {
-    "tokens_per_second_generation": 15.534,
-    "tokens_per_second_prompt": 85.098,
+    "tokens_per_second_generation": 4.802,
+    "tokens_per_second_prompt": 44.130,
     "first_token_latency_ms": null,
     "prompt_tokens": 512,
-    "generated_tokens": 128
+    "generated_tokens": 128,
+    "stddev_ts_prompt": 1.740,
+    "stddev_ts_generation": 0.684,
+    "samples_ts_prompt": [44.1394, 41.3409, 45.4773, 43.9841, 45.7075],
+    "samples_ts_generation": [4.26192, 3.90757, 5.45486, 5.03872, 5.34532],
+    "bench_run_utc": "2026-08-23T08:57:34Z",
+    "build_commit": "58d07a80",
+    "build_number": 4770
   },
   "memory": {
     "peak_rss_mb": 782.39,
@@ -65,7 +72,9 @@
   "reproducibility": {
     "git_commit_sha": "6eb1f22cd2cd",
     "docker_image_digest": "unknown",
-    "random_seed": 42
+    "random_seed": 42,
+    "llama_cpp_build": "b4770",
+    "llama_cpp_commit": "58d07a80"
   },
   "model_info": {
     "params_count": 361821120,
@@ -73,5 +82,8 @@
     "architecture": "llama",
     "claimed_params_estimate": "360M",
     "params_match": true
+  },
+  "_runtime": {
+    "model_path": "model/G1-360M_V18.2_PRODUCTION_F16.gguf"
   }
 }
